@@ -18,13 +18,6 @@ for y in range(len(points)):
         if (area < maxArea):
             continue
 
-        upLeft = (min(points[y][0], points[x][0]), min(points[y][1], points[x][1]))
-        upRigth = (min(points[y][0], points[x][0]), max(points[y][1], points[x][1]))
-        downRigth = (max(points[y][0], points[x][0]), max(points[y][1], points[x][1]))
-        downLeft = (max(points[y][0], points[x][0]), min(points[y][1], points[x][1]))
-        vertex = [upLeft, upRigth, downLeft, downRigth]
-        edge = [(upLeft, upRigth), (upRigth, downRigth), (downRigth, downLeft), (downLeft, upLeft)]
-
         use = True
         for l in lines:
             print(l)
